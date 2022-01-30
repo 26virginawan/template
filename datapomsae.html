@@ -194,13 +194,11 @@
               data-bs-toggle="dropdown"
             >
               <img
-                src="assets/img/profile-img.jpg"
+                src="assets/img/download.png"
                 alt="Profile"
                 class="rounded-circle"
               />
-              <span class="d-none d-md-block dropdown-toggle ps-2">
-                K. Anderson
-              </span>
+              <span class="d-none d-md-block dropdown-toggle ps-2">Admin</span>
             </a>
             <!-- End Profile Iamge Icon -->
 
@@ -283,7 +281,7 @@
 
         <li class="nav-item">
           <a
-            class="nav-link collapse"
+            class="nav-link collapsed"
             data-bs-target="#components-nav"
             data-bs-toggle="collapse"
             href="#"
@@ -298,13 +296,13 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="components-alerts.html">
+              <a href="datapendaftaran.html">
                 <i class="bi bi-circle"></i>
                 <span>Atlet Baru</span>
               </a>
             </li>
             <li>
-              <a href="components-accordion.html">
+              <a href="dataukt.html">
                 <i class="bi bi-circle"></i>
                 <span>Ujian Kenaikan Tingkat</span>
               </a>
@@ -330,19 +328,19 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="forms-elements.html" class="active">
+              <a href="datapomsae.html" class="active">
                 <i class="bi bi-circle"></i>
                 <span>Data Atlet Pomsae</span>
               </a>
             </li>
             <li>
-              <a href="forms-layouts.html">
+              <a href="datakyorugi.html">
                 <i class="bi bi-circle"></i>
                 <span>Data Atlet Kyorugi</span>
               </a>
             </li>
             <li>
-              <a href="forms-editors.html">
+              <a href="dataprestasi.html">
                 <i class="bi bi-circle"></i>
                 <span>Data Prestasi Atlet</span>
               </a>
@@ -368,13 +366,19 @@
             data-bs-parent="#sidebar-nav"
           >
             <li>
-              <a href="tables-general.html">
+              <a href="dataspp.html">
                 <i class="bi bi-circle"></i>
                 <span>Data SPP</span>
               </a>
             </li>
             <li>
-              <a href="tables-data.html">
+              <a href="datakas.html">
+                <i class="bi bi-circle"></i>
+                <span>Data Kas</span>
+              </a>
+            </li>
+            <li>
+              <a href="datatabungan.html">
                 <i class="bi bi-circle"></i>
                 <span>Data Tabungan</span>
               </a>
@@ -402,63 +406,75 @@
           <div class="col-lg-12">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Data Atlet Pomsae</h5>
-                <button type="button" class="btn btn-success">
-                  <a href="tambahpomsae.html" class="text-white">
+                <h5 class="card-title">Data Atlet Poomsae</h5>
+                <button type="button" class="btn btn-success btn-sm">
+                  <a href="tambahpendaftaran.html" class="text-white">
                     Tambah Data
                   </a>
                 </button>
-                <button type="button" class="btn btn-secondary">
+                <button type="button" class="btn btn-secondary btn-sm">
                   Cetak Data
                 </button>
                 <br />
                 <br />
+
                 <!-- Table with stripped rows -->
-                <table class="table table-striped">
+                <table class="table table-striped table-bordered table-hover">
                   <thead>
                     <tr>
                       <th scope="col">#</th>
-                      <th scope="col">Name</th>
-                      <th scope="col">Position</th>
-                      <th scope="col">Age</th>
-                      <th scope="col">Start Date</th>
+                      <th scope="col">Nama Atlet</th>
+                      <th scope="col">Tgl Registrasi</th>
+                      <th scope="col">TTL</th>
+                      <th scope="col">Jenis Kelamin</th>
+                      <th scope="col">BB</th>
+                      <th scope="col">TB</th>
+                      <th scope="col">No HP</th>
+                      <th scope="col">Tingkat Sabuk</th>
+                      <th scope="col">Kelas</th>
+                      <th scope="col" style="width: 15%;">Opsi</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <th scope="row">1</th>
                       <td>Brandon Jacob</td>
-                      <td>Designer</td>
-                      <td>28</td>
-                      <td>2016-05-25</td>
+                      <td>10 Agustus 2021</td>
+                      <td>Malang, 9 Juni 2000</td>
+                      <td>Laki-Laki</td>
+                      <td>56</td>
+                      <td>170</td>
+                      <td>0852124454</td>
+                      <td>Hitam</td>
+                      <td>Poomsae</td>
+                      <td>
+                        <button type="button" class="btn btn-success btn-sm">
+                          Edit
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                          Hapus
+                        </button>
+                      </td>
                     </tr>
                     <tr>
-                      <th scope="row">2</th>
-                      <td>Bridie Kessler</td>
-                      <td>Developer</td>
-                      <td>35</td>
-                      <td>2014-12-05</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Ashleigh Langosh</td>
-                      <td>Finance</td>
-                      <td>45</td>
-                      <td>2011-08-12</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">4</th>
-                      <td>Angus Grady</td>
-                      <td>HR</td>
-                      <td>34</td>
-                      <td>2012-06-11</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">5</th>
-                      <td>Raheem Lehner</td>
-                      <td>Dynamic Division Officer</td>
-                      <td>47</td>
-                      <td>2011-04-19</td>
+                      <th scope="row">1</th>
+                      <td>Brandon Jacob</td>
+                      <td>10 Agustus 2021</td>
+                      <td>Malang, 9 Juni 2000</td>
+                      <td>Laki-Laki</td>
+                      <td>56</td>
+                      <td>170</td>
+                      <td>0852124454</td>
+                      <td>Hitam</td>
+                      <td>Poomsae</td>
+                      <td>
+                        <button type="button" class="btn btn-success btn-sm">
+                          Edit
+                        </button>
+                        <button type="button" class="btn btn-danger btn-sm">
+                          Hapus
+                        </button>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
